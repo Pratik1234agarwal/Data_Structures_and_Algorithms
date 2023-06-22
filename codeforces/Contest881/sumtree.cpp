@@ -6,9 +6,6 @@ using vii = vector<vi>;
 using pii = pair<int, int>;
 using ll = long long int;
 using pll = pair<ll, ll>;
-using mpii = map<int, int>;
-using mpll = map<ll, ll>;
-using si = set<int>;
 
 #define F first
 #define S second
@@ -46,8 +43,23 @@ pll get_red_frac(ll x, ll y)
 
 void solve()
 {
-    int r = 3.4 / 1;
-    cout << r << endl;
+    ll n;
+    cin >> n;
+
+    // operate now;
+
+    ll sum = 0;
+    int c = 0;
+
+    // ll temp = 0;
+    while (n > 0)
+    {
+        sum += n;
+        n >>= 1;
+        c++;
+    }
+
+    cout << sum << endl;
 }
 
 signed main()
